@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newenvironment{problem}{%
+  \subsubsection*{\refstepcounter{problem}Problem~\theproblem:}}{}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 0}
+
+\noindent
+\emph{Due at the beginning of Lecture on 2014 September 09.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 1, problems 1 and 2
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 1, problem 3
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 1, problem 20
+\end{problem}
+
+\begin{problem}
+In Chapter~1, page~5, Kibble \& Berkshire refer to the axis directions $\ihat, \jhat, \khat$ as ``unit vectors''.
+In Appendix~A, Problem~15, they refer to a rotation matrix $\tensor{R}$ as a ``tensor''.
+Give some reasons Prof Hogg might object to both of these characterizations.
+\end{problem}
+
+\end{document}
