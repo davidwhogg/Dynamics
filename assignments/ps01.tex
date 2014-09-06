@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newenvironment{problem}{%
+  \subsubsection*{\refstepcounter{problem}Problem~\theproblem:}}{}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 1}
+
+\noindent
+\emph{Due at the beginning of Lecture on 2014 September 16.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 2, problem 1
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 2, problem 16
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 2, problem 29
+\end{problem}
+
+\begin{problem}
+Prof Hogg did (or will) tap a mug in lecture.  What, approximately, is
+the natural angular frequency $\omega_0$ and quality factor $Q$ for the
+principal (most excited) mode of the mug?  Explain your reasoning.
+Compare to the $Q$ of a piano string (hit a key and hold down the key
+to hear the ``sustained'' note from the piano).
+\end{problem}
+
+\end{document}
