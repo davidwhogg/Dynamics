@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newenvironment{problem}{%
+  \subsubsection*{\refstepcounter{problem}Problem~\theproblem:}}{}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 2}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 September 25.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 3, problem 1
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 3, problem 14
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 3, problem 15
+\end{problem}
+
+\begin{problem}
+Imagine that the projectile launched in Kibble \& Berkshire, problem 6
+was roughly a sphere of mass $M$ and radius $R$.  Roughly---and I mean
+order of magnitude only---what conditions would you need to set on the
+relationship between $M$ and $R$ such that the assumption (atmospheric
+drag is negligible) would hold?  Your answer will have a ``$\gg$'' or
+a ``$\ll$'' sign in it.  To get concrete, observe that atmospheric
+drag is a ram-pressure force in a problem like this.
+
+Once you have that answered, now imagine that the projectile is made
+of cold iron.  Your result (above) can be made into a limit on the
+mass, which is what?
+\end{problem}
+
+\end{document}
