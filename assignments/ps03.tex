@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newenvironment{problem}{%
+  \subsubsection*{\refstepcounter{problem}Problem~\theproblem:}}{}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 3}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 October 2.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 4, problem 16
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 4, problem 24
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 4, problem 28
+\end{problem}
+
+\begin{problem}
+Use the ideas in Kibble \& Berkshire, Ch~4, problem~18 to write a
+Python program (using numpy and matplotlib, perhaps) that plots $x$ vs
+$t$ and $y$ vs $t$ for the eccentric orbit described there.
+Set $e = 0.55$ and $a = 1$\,AU and $\tau = 1$\,yr.
+Make your time axis extend over $0<t<4$\,yr.
+Label your axes!
+You will have to solve Kepler's equation iteratively, I expect!
+Hand in your code along with your plots.
+\end{problem}
+
+\end{document}

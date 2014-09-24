@@ -1,4 +1,4 @@
-all: ps00.pdf ps01.pdf ps02.pdf
+all: ps00.pdf ps01.pdf ps02.pdf ps03.pdf
 
 %.pdf: %.tex
 	pdflatex $<
