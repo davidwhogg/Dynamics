@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newcounter{problempart}
+\newenvironment{problem}{%
+  \subsubsection*{\setcounter{problempart}{0}\refstepcounter{problem}Problem~\theproblem:}}{}
+\newcommand{\problempart}{\par\refstepcounter{problempart}\textsl{(\alph{problempart})}~}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 4}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 October 9.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 5, problem 2
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 5, problem 7
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 5, problem 20
+\end{problem}
+
+\begin{problem}
+One consequence of the material in this Chapter is that the line or
+trajectory described by a plumb line (a stationary string holding up a
+weight) is not the same as any free-falling particle's trajectory.
+
+\problempart Give the simplest possible explanation for the above
+fact.
+What is different about the falling, massive particle and the
+stretched, hanging string?
+
+\problempart Ignore air resistance in this part and all that follows.
+Calculate the deviation between the trajectory of a particle of mass
+$m$ dropped from rest at the top of the plumb line of length $\ell$
+when the particle passes the bottom of the plumb line.
+That is, by how much has the dropped mass veered away from the
+``vertical'' line after length $\ell$?
+Give your answer in terms of $m$, $\ell$, and the gravitational
+acceleration $g$.
+
+\problempart Now imagine that the mass was thrown \emph{downward}
+(parallel to the plumb line) at speed $v$ instead of being released
+from rest.
+Will the deviation be greater or smaller than the deviation you
+computed for something dropped from rest?
+In principle, you don't have to compute anything to answer this; you
+can just make a good argument.
+
+\problempart Now ignore special relativity and imagine that you threw
+the mass down at the \emph{speed of light}!
+This speed is so high that $\ell\,g\ll c^2$ (so you can ignore
+gravity!); now the deviation calculation is very easy!
+Compute the deviation in this case.
+
+\problempart \emph{(Bonus part, not for credit:)}
+When we ``turn on'' special relativity, we would have to re-compute
+the previous part, and for a laser pulse or laser beam (not a massive
+particle).
+When we do this, do you think it will increase or decrease the
+computed deviation?  Why?
+\end{problem}
+
+\end{document}
