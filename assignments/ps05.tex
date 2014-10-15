@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newcounter{problempart}
+\newenvironment{problem}{%
+  \subsubsection*{\setcounter{problempart}{0}\refstepcounter{problem}Problem~\theproblem:}}{}
+\newcommand{\problempart}{\par\refstepcounter{problempart}\textsl{(\alph{problempart})}~}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 5}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 October 16.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 6, problem 14
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 6, problem 23
+\end{problem}
+
+\end{document}
