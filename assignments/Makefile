@@ -1,5 +1,6 @@
-all: ps00.pdf ps01.pdf ps02.pdf ps03.pdf ps04.pdf ps05.pdf \
-     ps06.pdf
+ALLFILES = $(patsubst %.tex,%.pdf,$(wildcard *.tex))
+
+all: $(ALLFILES)
 
 %.pdf: %.tex
 	pdflatex $<

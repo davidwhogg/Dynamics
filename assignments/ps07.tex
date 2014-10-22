@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newcounter{problempart}
+\newenvironment{problem}{%
+  \subsubsection*{\setcounter{problempart}{0}\refstepcounter{problem}Problem~\theproblem:}}{}
+\newcommand{\problempart}{\par\refstepcounter{problempart}\textsl{(\alph{problempart})}~}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 7}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 October 30.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 8, problem 2
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 8, problem 9
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 8, problem 10
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 8, problem 15.
+If you \emph{loved} this problem, just for \emph{fun} (not for credit),
+consider doing problem~16 too.
+Problem~16 is more important astrophysically!
+\end{problem}
+
+\end{document}
