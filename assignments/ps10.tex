@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newcounter{problempart}
+\newenvironment{problem}{%
+  \subsubsection*{\setcounter{problempart}{0}\refstepcounter{problem}Problem~\theproblem:}}{}
+\newcommand{\problempart}{\par\refstepcounter{problempart}\textsl{(\alph{problempart})}~}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 10}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 November 20.}
+
+\begin{problem}
+Complete the problem we started in class on Thursday November 13, with
+two masses of mass $M$ connected to the walls with springs of spring
+constant $k$ and to each other by a spring of constant $K$.
+Write down the Lagrangian in each of the two generalized coordinate
+systems we wrote down, the $\mu$ and $\kappa$ tensors, and then get
+the eigenvalues and eigenvectors.
+Do these confirm our expectations about $\omega^2$ and the
+eigenvectors for both modes in both coordinate systems?
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 11, problem 1
+\end{problem}
+
+\begin{problem}
+Write a \texttt{Python} computer program that generates the matrix on
+the left-hand side of (11.33) from the book for any arbitrary number
+$n$.
+Write also the code that obtains its eigenvalues and eigenvectors
+(\texttt{scipy.linalg} is your friend here; it may be a one-liner).
+Now plot the lowest-frequency (not highest) 4 modes (in the style of
+Fig 11.6 in the book) for the case of $n=32$.
+Label each plot with the computed frequency of that mode, and compare
+it to the frequency you would expect for the corresponding mode from
+the continuous string of length $[n+1]\,\ell$.
+\end{problem}
+
+\end{document}
