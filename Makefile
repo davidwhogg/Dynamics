@@ -1,0 +1,2 @@
+all:
+	cd assignments ; make
