@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newcounter{problempart}
+\newenvironment{problem}{%
+  \subsubsection*{\setcounter{problempart}{0}\refstepcounter{problem}Problem~\theproblem:}}{}
+\newcommand{\problempart}{\par\refstepcounter{problempart}\textsl{(\alph{problempart})}~}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 12}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 December 11.}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 13, problem 4.
+\end{problem}
+
+\begin{problem}
+Kibble \& Berkshire, Ch 13, problem 8.
+\end{problem}
+
+\begin{problem}
+Write a computer program that more-or-less reproduces Fig.~13.12~(a), (b), and (c) in the book.
+That is, integrate trajectories in the relevant equations, with one trajectory coming
+to the limit cycle from the interior and one coming from the exterior in each case.
+Choose an integrator step size that is small enough to make the integration accurate
+at the level necessary for the figure.
+Do your figures look like those in the book?  If there are discrepancies, what do you think is going on?
+Hand in both your figures and the code that generated them.
+
+Bonus (not for credit): Integrate with a first-order ``leapfrog'' integrator and
+interpolate the (intermediate) y values to the locations of the x
+values for plotting.
+\end{problem}
+
+\end{document}
