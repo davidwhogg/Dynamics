@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{bm}
+
+\newcounter{problem}
+\newcounter{problempart}
+\newenvironment{problem}{%
+  \subsubsection*{\setcounter{problempart}{0}\refstepcounter{problem}Problem~\theproblem:}}{}
+\newcommand{\problempart}{\par\refstepcounter{problempart}\textsl{(\alph{problempart})}~}
+\renewcommand{\vector}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+\newcommand{\ihat}{\vector{i}}
+\newcommand{\jhat}{\vector{j}}
+\newcommand{\khat}{\vector{k}}
+
+\begin{document}\sloppy\sloppypar\thispagestyle{empty}
+
+\section*{PHYS-UA 120 Dynamics Problem Set 13}
+
+\noindent
+\emph{Due in the ``Dynamics'' hand-in box before noon on 2014 December 18.}
+
+\begin{problem}
+Integrate a trajectory starting at rest at x=0.01, y=0.95 in the
+H\'enon--Heiles potential given on pp.~368--369.  Set $m=1$.  Note
+that the textbook equations have bad units; the coordinates (including
+time) have been implicitly made dimensionless.  Ignore that fact while
+you solve the problem but then figure out (on your own; not for
+credit) how that is possible.  Hand in a plot of a few time units of
+the trajectory in the $x$--$y$ plane plus your code.
+\end{problem}
+
+\begin{problem}
+Reproduce Fig.~D.2 as well as you can.  The lines are \emph{fixed}
+points (or limit cycles) of the map, so at each value of $r$ you step
+through, you have to iterate the map to ``convergence'' and then plot
+some (say) 128 points.  When the limit is a one-cycle, these points
+will all hit at the same place, when it is a two-cycle, in two places,
+and so on.  Hand in your figure and your code.
+\end{problem}
+
+\end{document}
