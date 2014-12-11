@@ -20,13 +20,20 @@
 \emph{Due in the ``Dynamics'' hand-in box before noon on 2014 December 18.}
 
 \begin{problem}
-Integrate a trajectory starting at rest at x=0.01, y=0.95 in the
-H\'enon--Heiles potential given on pp.~368--369.  Set $m=1$.  Note
-that the textbook equations have bad units; the coordinates (including
+Integrate a trajectory starting at $t=0$ at
+$x=0.100$, $y=0.800$, $v_x=-0.050$, $v_y=0.020$ for times $0<t<50$ in the
+H\'enon--Heiles potential given on pp.~368--369 (with $m=1$).
+Use a leap-frog integrator (as described in lecture).
+Note that the textbook equations have bad units; the coordinates (including
 time) have been implicitly made dimensionless.  Ignore that fact while
 you solve the problem but then figure out (on your own; not for
-credit) how that is possible.  Hand in a plot of a few time units of
-the trajectory in the $x$--$y$ plane plus your code.
+credit) how that is possible.  Hand in a plot of
+the trajectory in the $x$--$y$ plane plus a plot of the Hamiltonian vs
+time (to show that your code is not obviously wrong).
+Over-plot a second integration (using a different color or linestyle)
+starting identically except with initial $x=0.101$.
+Can you see the exponential divergence of trajectories?
+Hand in your code along with the plots.
 \end{problem}
 
 \begin{problem}
